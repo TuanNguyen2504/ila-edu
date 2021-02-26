@@ -1,0 +1,6 @@
+{
+	"hover active": {
+		"prefix": "hoa",
+		"body": ["&:hover, &:active {$1}"]
+	}
+}

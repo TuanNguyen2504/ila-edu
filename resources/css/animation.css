@@ -1,0 +1,22 @@
+.ani-fade-in--slide {
+	-webkit-animation: aniFadeInSlide 1.2s ease-in forwards;
+	animation: aniFadeInSlide 1.2s ease-in forwards;
+}
+
+@-webkit-keyframes aniFadeInSlide {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes aniFadeInSlide {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,446 @@
+// =======  variables ======= //
+$main-color: #45c0f8;
+$main-color-dark: #20b6fa;
+$text-color-dark: #696969;
+
+// ======= custom - utils ======= //
+.btn {
+  border-radius: 100px;
+  padding: 15px 30px;
+  transition: all 0.35s;
+}
+
+// ======= header ======= //
+.header {
+  width: 100%;
+  z-index: 2;
+  padding: 0 50px;
+
+  &.sticky {
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    .menu-item {
+      .title {
+        color: $main-color;
+        &.contact-btn {
+          color: #fff;
+        }
+      }
+    }
+
+    .navbar-wrapper {
+      .logo {
+        &--primary {
+          display: none;
+        }
+        &--secondary {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.navbar-wrapper {
+  .logo {
+    &--primary {
+      width: 130px;
+      height: 170px;
+    }
+    &--secondary {
+      display: none;
+    }
+  }
+}
+
+.menu {
+  height: 94px;
+}
+
+.menu-item {
+  padding: 20px 0px;
+  margin-left: 14px;
+  position: relative;
+
+  .title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    opacity: 0.85;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .contact-btn {
+    background-color: $main-color;
+    margin-left: 24px;
+    opacity: 1;
+
+    &:hover,
+    &:active {
+      background-color: $main-color-dark;
+    }
+  }
+
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  .flag {
+    cursor: pointer;
+  }
+}
+
+.sub-menu {
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.15);
+  min-width: 340px;
+  padding: 20px;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+
+  // jQuery effect
+  &.hover {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // arrow
+  &::before {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-item {
+    line-height: 2.4;
+
+    & a {
+      transition: all 0.3s;
+      color: $text-color-dark;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    & .arrow-icon {
+      color: #606162;
+      font-size: 10px;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      & a,
+      & .arrow-icon {
+        color: #000;
+      }
+    }
+  }
+
+  &--lv2 {
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.15);
+
+    min-width: -webkit-max-content;
+
+    min-width: -moz-max-content;
+
+    min-width: max-content;
+    padding: 20px;
+
+    position: absolute;
+    left: calc(100% + 22px);
+    top: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+
+    // jQuery effect
+    &.hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.banner-wrapper {
+  top: 0;
+  left: 0;
+}
+
+.banner {
+  &-img {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+// ======= slide menu ======= //
+.slide-menu {
+  min-height: 100vh;
+  max-width: 400px;
+  height: 100%;
+  padding: 48px;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  background-color: #fff;
+  right: 0;
+  z-index: 99;
+
+  // jQuery effect
+  transform: translateX(100%);
+  overflow-x: hidden;
+  transition: transform 0.3s;
+
+  &.show {
+    transform: none;
+  }
+
+  &-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $text-color-dark;
+
+    &:hover,
+    &:active {
+      color: #000;
+    }
+  }
+
+  & * {
+    margin-bottom: 20px;
+  }
+
+  .btn--signup {
+    background-color: $main-color;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px;
+
+    &:hover,
+    &:active {
+      background-color: $main-color-dark;
+    }
+  }
+
+  .close-icon {
+    top: 16px;
+    right: 20px;
+
+    color: $text-color-dark;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.login-area {
+  background-color: $main-color;
+  padding: 8px 42px;
+  border-radius: 8px;
+  & * {
+    margin: 8px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .btn {
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    color: $text-color-dark;
+
+    &:hover,
+    &:active {
+      background-color: $main-color-dark;
+      color: #fff;
+    }
+  }
+}
+
+.sm-menu {
+  padding: 12px 0;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  display: none;
+
+  &-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+
+    & a {
+      color: #444;
+    }
+
+    & i {
+      padding-left: 8px;
+      margin: 0;
+      color: #aaa;
+    }
+
+    &:hover,
+    &:active {
+      & a {
+        transition: all 0.3s;
+        color: $text-color-dark;
+      }
+    }
+  }
+
+  &-sub {
+    padding-left: 12px;
+    border-left: solid 1px #e5e5e5;
+    margin-bottom: 0;
+    margin-top: 8px;
+
+    & li {
+      margin-bottom: 0;
+      text-transform: none;
+      padding: 8px 16px;
+      max-width: 100%;
+      & a {
+        font-weight: 400;
+        color: $text-color-dark;
+      }
+    }
+  }
+}
+
+// ======= carousel ======= //
+#carouselBanner {
+  display: none;
+}
+
+// ======= responsive - media query ======= //
+@media only screen and (max-width: 1140px) {
+  // ======= header ======= //
+  .header {
+    padding: 0 16px;
+    .navbar-wrapper {
+      .logo {
+        &--primary {
+          display: none;
+        }
+        &--secondary {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  // ======= header ======= //
+  .header {
+    .menu-item {
+      display: none;
+      &#slideMenuIcon,
+      &#contactBtn,
+      &#flag {
+        display: block;
+      }
+    }
+
+    .contact-btn {
+      padding: 8px 32px;
+    }
+
+    .navbar-wrapper {
+      .logo {
+        &--secondary {
+          width: 48px;
+        }
+      }
+    }
+  }
+
+  .sm-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  // ======= header ======= //
+  .header {
+    background-color: #fff;
+
+    #slideMenuIcon .icon {
+      color: $main-color;
+    }
+  }
+  .slide-menu {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .banner-wrapper {
+    display: none;
+  }
+  #carouselBanner {
+    display: block;
+    transform: translateY(94px);
+    .carousel-item {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}

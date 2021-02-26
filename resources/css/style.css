@@ -1,0 +1,340 @@
+.btn {
+  border-radius: 100px;
+  padding: 15px 30px;
+  transition: all 0.35s;
+}
+
+.header {
+  width: 100%;
+  z-index: 2;
+  padding: 0 50px;
+}
+.header.sticky {
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.header.sticky .menu-item .title {
+  color: #45c0f8;
+}
+.header.sticky .menu-item .title.contact-btn {
+  color: #fff;
+}
+.header.sticky .navbar-wrapper .logo--primary {
+  display: none;
+}
+.header.sticky .navbar-wrapper .logo--secondary {
+  display: block;
+}
+
+.navbar-wrapper .logo--primary {
+  width: 130px;
+  height: 170px;
+}
+.navbar-wrapper .logo--secondary {
+  display: none;
+}
+
+.menu {
+  height: 94px;
+}
+
+.menu-item {
+  padding: 20px 0px;
+  margin-left: 14px;
+  position: relative;
+}
+.menu-item .title {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+  transition: all 0.3s;
+}
+.menu-item .title:hover, .menu-item .title:active {
+  opacity: 1;
+}
+.menu-item .contact-btn {
+  background-color: #45c0f8;
+  margin-left: 24px;
+  opacity: 1;
+}
+.menu-item .contact-btn:hover, .menu-item .contact-btn:active {
+  background-color: #20b6fa;
+}
+.menu-item .icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+.menu-item .icon:hover, .menu-item .icon:active {
+  transform: scale(1.1);
+}
+.menu-item .flag {
+  cursor: pointer;
+}
+
+.sub-menu {
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  min-width: 340px;
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.sub-menu.hover {
+  opacity: 1;
+  visibility: visible;
+}
+.sub-menu::before {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sub-menu-item {
+  line-height: 2.4;
+}
+.sub-menu-item a {
+  transition: all 0.3s;
+  color: #696969;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sub-menu-item .arrow-icon {
+  color: #606162;
+  font-size: 10px;
+  transition: all 0.3s;
+}
+.sub-menu-item:hover a, .sub-menu-item:hover .arrow-icon, .sub-menu-item:active a, .sub-menu-item:active .arrow-icon {
+  color: #000;
+}
+.sub-menu--lv2 {
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: 20px;
+  position: absolute;
+  left: calc(100% + 22px);
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.sub-menu--lv2.hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.banner-wrapper {
+  top: 0;
+  left: 0;
+}
+
+.banner-img {
+  width: 100%;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slide-menu {
+  min-height: 100vh;
+  max-width: 400px;
+  height: 100%;
+  padding: 48px;
+  background-color: #fff;
+  right: 0;
+  z-index: 99;
+  transform: translateX(100%);
+  overflow-x: hidden;
+  transition: transform 0.3s;
+}
+.slide-menu::-webkit-scrollbar {
+  width: 0px;
+}
+.slide-menu.show {
+  transform: none;
+}
+.slide-menu-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #696969;
+}
+.slide-menu-link:hover, .slide-menu-link:active {
+  color: #000;
+}
+.slide-menu * {
+  margin-bottom: 20px;
+}
+.slide-menu .btn--signup {
+  background-color: #45c0f8;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px;
+}
+.slide-menu .btn--signup:hover, .slide-menu .btn--signup:active {
+  background-color: #20b6fa;
+}
+.slide-menu .close-icon {
+  top: 16px;
+  right: 20px;
+  color: #696969;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.slide-menu .close-icon:hover, .slide-menu .close-icon:active {
+  transform: scale(1.2);
+}
+
+.login-area {
+  background-color: #45c0f8;
+  padding: 8px 42px;
+  border-radius: 8px;
+}
+.login-area * {
+  margin: 8px 0;
+}
+.login-area h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.login-area .btn {
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  color: #696969;
+}
+.login-area .btn:hover, .login-area .btn:active {
+  background-color: #20b6fa;
+  color: #fff;
+}
+
+.sm-menu {
+  padding: 12px 0;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  display: none;
+}
+.sm-menu-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+}
+.sm-menu-item a {
+  color: #444;
+}
+.sm-menu-item i {
+  padding-left: 8px;
+  margin: 0;
+  color: #aaa;
+}
+.sm-menu-item:hover a, .sm-menu-item:active a {
+  transition: all 0.3s;
+  color: #696969;
+}
+.sm-menu-sub {
+  padding-left: 12px;
+  border-left: solid 1px #e5e5e5;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.sm-menu-sub li {
+  margin-bottom: 0;
+  text-transform: none;
+  padding: 8px 16px;
+  max-width: 100%;
+}
+.sm-menu-sub li a {
+  font-weight: 400;
+  color: #696969;
+}
+
+#carouselBanner {
+  display: none;
+}
+
+@media only screen and (max-width: 1140px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header .navbar-wrapper .logo--primary {
+    display: none;
+  }
+  .header .navbar-wrapper .logo--secondary {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header .menu-item {
+    display: none;
+  }
+  .header .menu-item#slideMenuIcon, .header .menu-item#contactBtn, .header .menu-item#flag {
+    display: block;
+  }
+  .header .contact-btn {
+    padding: 8px 32px;
+  }
+  .header .navbar-wrapper .logo--secondary {
+    width: 48px;
+  }
+
+  .sm-menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header {
+    background-color: #fff;
+  }
+  .header #slideMenuIcon .icon {
+    color: #45c0f8;
+  }
+
+  .slide-menu {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .banner-wrapper {
+    display: none;
+  }
+
+  #carouselBanner {
+    display: block;
+    transform: translateY(94px);
+  }
+  #carouselBanner .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
