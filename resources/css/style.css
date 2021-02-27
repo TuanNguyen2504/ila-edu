@@ -608,6 +608,46 @@
   background-color: #c26236;
 }
 
+.news-section {
+  padding: 40px 15px;
+  background-color: #f0f2f5;
+  color: #696969;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.news-section .card {
+  margin-bottom: 24px;
+  border: none;
+  box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.04);
+  height: 560px;
+}
+.news-section .card-body {
+  padding: 22px 30px 24px;
+}
+.news-section .card-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.news-section .card-title a {
+  color: #45c0f8;
+}
+.news-section .calendar {
+  display: block;
+  margin-bottom: 12px;
+}
+.news-section .calendar img {
+  margin-right: 12px;
+  width: 22px;
+  height: 22px;
+}
+.news-section .btn {
+  font-size: 14px;
+  font-weight: bold;
+  color: #45c0f8;
+}
+
 @media only screen and (max-width: 1140px) {
   .header {
     padding: 0 16px;
@@ -700,6 +740,12 @@
     max-width: 100%;
     transform: none;
     padding: 12px 24px;
+  }
+
+  .news-section .card {
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
   }
 }
 

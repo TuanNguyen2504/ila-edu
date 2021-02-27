@@ -674,6 +674,7 @@ $text-color-deep-dark: #333;
     width: 100%;
   }
 }
+
 // ======= why choose section ======= //
 .whychoose-section {
   background-image: url("../../images/whychoose-bg.jpg");
@@ -758,6 +759,54 @@ $text-color-deep-dark: #333;
   }
   &5 {
     background-color: #c26236;
+  }
+}
+
+// ======= news section ======= //
+.news-section {
+  padding: 40px 15px;
+  background-color: #f0f2f5;
+
+  color: $text-color-dark;
+  font-size: 14px;
+  line-height: 1.6;
+
+  .card {
+    margin-bottom: 24px;
+    border: none;
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.04);
+
+    height: 560px;
+  }
+
+  .card-body {
+    padding: 22px 30px 24px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    a {
+      color: $main-color;
+    }
+  }
+
+  .calendar {
+    display: block;
+    margin-bottom: 12px;
+    img {
+      margin-right: 12px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: $main-color;
   }
 }
 
@@ -878,6 +927,15 @@ $text-color-deep-dark: #333;
       max-width: 100%;
       transform: none;
       padding: 12px 24px;
+    }
+  }
+
+  // ======= news section ======= //
+  .news-section {
+    .card {
+      min-height: -webkit-max-content;
+      min-height: -moz-max-content;
+      min-height: max-content;
     }
   }
 }
