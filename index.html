@@ -351,7 +351,68 @@
 		</div>
 
 		<!-- main -->
-		<main></main>
+		<main>
+			<!-- search section -->
+			<section class="search-section position-relative">
+				<!-- filter -->
+				<div class="search-section-filter position-absolute container">
+					<p class="text-center">
+						Xây dựng lộ trình học dành riêng cho con bạn
+					</p>
+					<form
+						action=""
+						id="filterForm"
+						class="search-section-filter-form d-flex justify-content-between"
+					>
+						<div class="d-flex justify-content-between flex-grow-1">
+							<div class="search-section-filter-input">
+								<label for="age">Con tôi</label>
+								<select class="form-control" name="age" id="age">
+									<option value="0">Chọn</option>
+									<option value="1">3 - 6</option>
+									<option value="2">6 - 11</option>
+									<option value="3">11 - 16</option>
+								</select>
+								<span class="ml-2 font-weight-bold" style="font-size: 14px"
+									>tuổi</span
+								>
+							</div>
+
+							<div class="search-section-filter-input">
+								<label for="level">Trình độ</label>
+								<select disabled class="form-control" name="level" id="level">
+									<option value="0">Chọn</option>
+									<option value="1">Chưa biết</option>
+								</select>
+							</div>
+
+							<div class="search-section-filter-input">
+								<label for="dream">Ước mơ</label>
+								<select disabled class="form-control" name="dream" id="dream">
+									<option value="1">Chưa biết</option>
+								</select>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-submit" id="btnSubmit">
+							Tìm hiểu thêm
+						</button>
+					</form>
+					<!-- button for small device -->
+					<a href="#"></a>
+						<button class="btn btn-submit btn-submit--sm">
+							Bắt đầu ngay bây giờ
+						</button>
+					</a>
+				</div>
+				<!-- image -->
+				<div class="search-section-img">
+					<a href="#">
+						<img src="./images/banner-search-section.jpg" alt="Banner"
+					/></a>
+				</div>
+			</section>
+		</main>
 
 		<!-- footer -->
 		<footer></footer>

@@ -2,5 +2,10 @@
 	"hover active": {
 		"prefix": "hoa",
 		"body": ["&:hover, &:active {$1}"]
+	},
+	"a": {
+		"prefix": "q",
+		"body": ["{ value: $1, title: '$2' },"],
+		"description": "a"
 	}
 }
