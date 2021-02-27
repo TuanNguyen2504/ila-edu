@@ -1,0 +1,38 @@
+.schedules {
+  padding-top: 94px;
+  background-color: #f0f2f5;
+}
+.schedules-wrapper {
+  padding: 40px 0;
+}
+.schedules .course {
+  margin: 18px 32px;
+  align-items: center;
+}
+.schedules .btn {
+  background-color: #45c0f8;
+  color: #fff;
+  padding: 8px 24px;
+}
+.schedules .filter {
+  background-color: #fff;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.schedules .filter span {
+  color: #767676;
+  font-weight: bold;
+  opacity: 0.6;
+  font-size: 12px;
+}
+.schedules .filter .btn {
+  width: 100%;
+}
+.schedules select {
+  background: transparent;
+  opacity: 0.6;
+  color: #333;
+}
+
+/*# sourceMappingURL=schedules.css.map */
