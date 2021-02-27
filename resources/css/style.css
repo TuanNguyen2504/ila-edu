@@ -353,7 +353,7 @@
 }
 
 .program-section {
-  padding: 40px 0;
+  padding: 40px 15px;
 }
 .program-section-title {
   font-size: 26px;
@@ -501,6 +501,29 @@
 .video-link a:hover, .video-link a:active {
   border-bottom: none;
   opacity: 1;
+}
+
+.good-story-section {
+  background-color: #f0f2f5;
+}
+.good-story-section-content {
+  padding: 40px 15px;
+}
+.good-story-section .btn {
+  margin-top: 20px;
+  background-color: #45c0f8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.video-embed-item {
+  margin-bottom: 20px;
+  height: 240px;
+}
+.video-embed iframe {
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1140px) {
