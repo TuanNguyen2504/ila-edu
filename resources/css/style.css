@@ -648,6 +648,69 @@
   color: #45c0f8;
 }
 
+footer {
+  background-color: #2f2f2f;
+}
+
+.footer-logo {
+  flex-basis: 140px;
+  margin-right: 15px;
+}
+.footer-logo img {
+  width: 100px;
+  height: 130px;
+}
+.footer-info {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.footer-info-item h6 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+.footer-info-item p a {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.footer-info-item p a:hover, .footer-info-item p a:active {
+  opacity: 1;
+}
+.footer-info-item.map h6 a {
+  color: #fff;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.footer-contact {
+  padding-bottom: 60px;
+}
+.footer-contact p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer-contact-icon {
+  margin-left: 24px;
+}
+.footer-contact-icon i {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0 4px;
+  transition: all 0.3s;
+}
+.footer-contact-icon i:hover, .footer-contact-icon i:active {
+  opacity: 1;
+}
+.footer-contact .copyright {
+  margin-bottom: 24px;
+}
+
 @media only screen and (max-width: 1140px) {
   .header {
     padding: 0 16px;
@@ -657,6 +720,10 @@
   }
   .header .navbar-wrapper .logo--secondary {
     display: block;
+  }
+
+  .footer-logo {
+    display: none;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -690,6 +757,12 @@
     max-width: 50%;
     margin-top: 16px;
     transform: translateX(50%);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-info-item.map h6,
+.footer-info-item.map .cambridge-logo {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -746,6 +819,18 @@
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
+  }
+
+  .footer-info {
+    justify-content: center;
+  }
+
+  .footer-info-item.add-ref {
+    display: none;
+  }
+
+  .footer-info-item.map img {
+    width: 100%;
   }
 }
 
