@@ -1,0 +1,83 @@
+.centers {
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding-top: 94px;
+}
+.centers h2 {
+  margin-top: 20px;
+}
+.centers select {
+  width: 50% !important;
+  margin: auto;
+  background: transparent;
+}
+.centers .map {
+  margin-top: 42px;
+  height: 60vh;
+}
+.centers .map .col {
+  padding: 0;
+}
+.centers .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.centers .address {
+  background-color: #fff;
+  overflow-y: scroll;
+  max-height: 100%;
+}
+.centers .address-item {
+  padding: 14px 20px 14px 60px;
+  transition: all 0.4s;
+  position: relative;
+}
+.centers .address-item * {
+  cursor: pointer;
+}
+.centers .address-item h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.centers .address-item p {
+  font-size: 14px;
+  color: #696969;
+  margin-bottom: 8px;
+}
+.centers .address-item a {
+  color: #45c0f8;
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+.centers .address-item a:hover, .centers .address-item a:active {
+  text-decoration: underline !important;
+}
+.centers .address-item .icon {
+  color: #696969;
+}
+.centers .address-item .map-icon {
+  top: 10px;
+  left: 20px;
+}
+.centers .address-item .map-icon i {
+  color: #45c0f8;
+  font-size: 32px;
+}
+.centers .address-item .btn {
+  margin-top: 20px;
+  background-color: #45c0f8;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.centers .address-item.active {
+  background-color: #e5e5e5;
+}
+.centers .address-item:hover, .centers .address-item:active {
+  background-color: #f7f7f7;
+}
+
+/*# sourceMappingURL=centers.css.map */

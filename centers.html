@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Danh sách các trung tâm Anh ngữ ILA.</title>
+		<link
+			rel="icon"
+			href="./images/favicon.ico"
+			type="image/x-icon"
+			sizes="16x16"
+		/>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="./vendors/css/bootstrap.min.css" />
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="./vendors/fonts/fontawesome-5.0.13/css/all.css"
+		/>
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- style -->
+		<link rel="stylesheet" href="./resources/css/reset.css" />
+		<link rel="stylesheet" href="./resources/css/style.css" />
+		<link rel="stylesheet" href="./resources/css/animation.css" />
+		<link rel="stylesheet" href="./resources/css/centers.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header position-fixed sticky">
+			<nav class="navbar-wrapper d-flex justify-content-between">
+				<!-- Logo -->
+				<a href="/" class="logo">
+					<div class="h-100 d-flex align-items-center">
+						<img
+							class="logo--secondary"
+							src="./images/logo-sec.png"
+							alt="Logo"
+						/>
+					</div>
+				</a>
+				<!-- Menu -->
+				<ul class="menu d-flex align-items-center">
+					<li class="menu-item">
+						<a href="#" class="title">Beyond English</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item">
+								<a href="#">Phương pháp học tư duy thế kỷ 21</a>
+							</li>
+							<li class="sub-menu-item">
+								<a href="#">Môi trường học thế kỷ 21</a>
+							</li>
+							<li class="sub-menu-item">
+								<a href="#">Nguồn cảm hứng tư duy thế kỷ 21</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="title">Các khoá học</a>
+						<ul class="sub-menu">
+							<li
+								class="sub-menu-item d-flex justify-content-between align-items-center position-relative"
+							>
+								<a href="#">Tiếng Anh Trẻ em <br />& Thanh thiếu niên</a>
+								<i class="fas fa-chevron-right arrow-icon"></i>
+								<ul class="sub-menu--lv2">
+									<li class="sub-menu-item">
+										<a href="#">Jumpstart (Tiếng Anh Trẻ Em từ 3 - 6 tuổi)</a>
+									</li>
+									<li class="sub-menu-item">
+										<a href="#"
+											>Super Juniors (Tiếng Anh Thiếu Nhi từ 6 - 11 tuổi)</a
+										>
+									</li>
+									<li class="sub-menu-item">
+										<a href="#"
+											>Smart Teens (Tiếng Anh Thiếu Niên từ 11 - 16 tuổi)</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li
+								class="sub-menu-item d-flex justify-content-between align-items-center position-relative"
+							>
+								<a href="#">Tiếng Anh Người lớn</a>
+								<i class="fas fa-chevron-right arrow-icon"></i>
+								<ul class="sub-menu--lv2">
+									<li class="sub-menu-item">
+										<a href="#">Global English (Tiếng Anh Giao Tiếp Quốc Tế)</a>
+									</li>
+									<li class="sub-menu-item">
+										<a href="#">Exam English (Tiếng Anh Luyện Thi)</a>
+									</li>
+								</ul>
+							</li>
+							<li class="sub-menu-item">
+								<a href="#">Tiếng Anh dành cho doanh nghiệp</a>
+							</li>
+							<li class="sub-menu-item"><a href="#">ILA Maths</a></li>
+							<li class="sub-menu-item"><a href="#">ILA Du học</a></li>
+							<li class="sub-menu-item"><a href="#">Du học hè 2020</a></li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="centers.html" class="title">Trung tâm đào tạo</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#">Đà Nẵng</a></li>
+							<li class="sub-menu-item"><a href="#">Khánh Hoà</a></li>
+							<li class="sub-menu-item"><a href="#">Hà Nội</a></li>
+							<li class="sub-menu-item"><a href="#">Quảng Ninh</a></li>
+							<li class="sub-menu-item"><a href="#">Hải Phòng</a></li>
+							<li class="sub-menu-item"><a href="#">Hồ Chí Minh</a></li>
+							<li class="sub-menu-item"><a href="#">Biên Hoà</a></li>
+							<li class="sub-menu-item"><a href="#">Bình Dương</a></li>
+							<li class="sub-menu-item"><a href="#">Cần Thơ</a></li>
+							<li class="sub-menu-item"><a href="#">Kiên Giang</a></li>
+							<li class="sub-menu-item"><a href="#">Vũng Tàu</a></li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="title">Lịch học</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" class="title">Cơ hội nghề nghiệp</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item">
+								<a href="#"
+									>Tuyển dụng Giáo viên nước ngoài và các vị trí Quản lý giáo
+									vụ</a
+								>
+							</li>
+							<li class="sub-menu-item">
+								<a href="#">Tuyển dụng nhân viên</a>
+							</li>
+						</ul>
+					</li>
+					<li id="flag" class="menu-item">
+						<img class="title flag" src="./images/flag-uk.svg" alt="flag" />
+					</li>
+					<li id="contactBtn" class="menu-item">
+						<a href="#" class="btn contact-btn title">Liên hệ</a>
+					</li>
+					<li id="slideMenuIcon" class="menu-item">
+						<i class="fas fa-bars title icon"></i>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- slide menu -->
+		<div id="slideMenu" class="slide-menu d-flex flex-column position-fixed">
+			<div class="login-area d-flex flex-column align-items-center">
+				<h2>ĐĂNG NHẬP VÀO ILA</h2>
+				<a href="#" class="btn">TÔI LÀ PHỤ HUYNH</a>
+				<a href="#" class="btn">TÔI LÀ HỌC VIÊN</a>
+			</div>
+			<!-- start menu for small device -->
+			<ul id="smallMenu" class="sm-menu">
+				<li class="sm-menu-item">
+					<a
+						data-toggle="collapse"
+						href="#collapse1"
+						role="button"
+						aria-expanded="false"
+						aria-controls="collapse1"
+						>beyond english <i class="fas fa-caret-down"></i
+					></a>
+					<ul class="collapse sm-menu-sub" id="collapse1">
+						<li><a href="#">Beyond english</a></li>
+						<li><a href="#">Phương pháp học tư duy thế kỷ 21</a></li>
+						<li><a href="#">Môi trường học thế kỷ 21</a></li>
+						<li><a href="#">Nguồn cảm hứng tư duy thế kỷ 21</a></li>
+					</ul>
+				</li>
+				<li class="sm-menu-item">
+					<a
+						data-toggle="collapse"
+						href="#collapse2"
+						role="button"
+						aria-expanded="false"
+						aria-controls="collapse2"
+						>các khoá học <i class="fas fa-caret-down"></i
+					></a>
+					<ul class="collapse sm-menu-sub" id="collapse2">
+						<li>
+							<a
+								data-toggle="collapse"
+								href="#collapse2_1"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapse2_1"
+								>Tiếng Anh Trẻ em <br />
+								&amp; Thanh Thiếu Niên <i class="fas fa-caret-down"></i>
+							</a>
+							<ul class="collapse sm-menu-sub" id="collapse2_1">
+								<li>
+									<a href="#"
+										>Tiếng Anh Trẻ em <br />
+										&amp; Thanh Thiếu Niên</a
+									>
+								</li>
+								<li>
+									<a href="#">Jumpstart (Dành cho 3 - 6 tuổi)</a>
+								</li>
+								<li><a href="#">Super Juniors (Dành cho 6 - 11 tuổi)</a></li>
+								<li><a href="#">Smart Teens (Dành cho 11 - 16 tuổi)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a
+								data-toggle="collapse"
+								href="#collapse2_2"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapse2_2"
+								>Tiếng Anh Người lớn <i class="fas fa-caret-down"></i
+							></a>
+							<ul class="collapse sm-menu-sub" id="collapse2_2">
+								<li><a href="#">Tiếng Anh Người lớn</a></li>
+								<li>
+									<a href="#">Global English (Tiếng Anh giao tiếp quốc tế)</a>
+								</li>
+								<li><a href="#">Exam English (Tiếng Anh luyện thi) </a></li>
+							</ul>
+						</li>
+						<li><a href="#">Tiếng Anh Dành cho Doanh nghiệp</a></li>
+						<li><a href="#">ILA Maths</a></li>
+						<li><a href="#">ILA Du học</a></li>
+						<li><a href="#">Du học hè 2020</a></li>
+					</ul>
+				</li>
+				<li class="sm-menu-item">
+					<a
+						data-toggle="collapse"
+						href="#collapse3"
+						role="button"
+						aria-expanded="false"
+						aria-controls="collapse3"
+						>Trung tâm đào tạo <i class="fas fa-caret-down"></i
+					></a>
+					<ul class="collapse sm-menu-sub" id="collapse3">
+						<li><a href="#">Tất cả trung tâm</a></li>
+						<li><a href="#">Đà Nẵng</a></li>
+						<li><a href="#">Khánh Hoà </a></li>
+						<li><a href="#">Hà Nội</a></li>
+						<li><a href="#">Quảng Ninh</a></li>
+						<li><a href="#">Hải Phòng</a></li>
+						<li><a href="#">Hồ Chí Minh</a></li>
+						<li><a href="#">Biên Hoà</a></li>
+						<li><a href="#">Bình Dương</a></li>
+						<li><a href="#">Cần Thơ</a></li>
+						<li><a href="#">Kiên Giang</a></li>
+						<li><a href="#">Vũng Tàu</a></li>
+					</ul>
+				</li>
+				<li class="sm-menu-item">
+					<a href="#">Chuyện hay của ila</a>
+				</li>
+				<li class="sm-menu-item">
+					<a
+						data-toggle="collapse"
+						href="#collapse4"
+						role="button"
+						aria-expanded="false"
+						aria-controls="collapse4"
+						>Cơ hội nghề nghiệp <i class="fas fa-caret-down"></i
+					></a>
+					<ul class="collapse sm-menu-sub" id="collapse4">
+						<li>
+							<a href="#"
+								>Tuyển dụng Giáo viên nước ngoài và các vị trí Quản lý giáo
+								vụ</a
+							>
+						</li>
+						<li><a href="#">Tuyển dụng nhân viên</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- end menu for small device -->
+			<a href="#" class="slide-menu-link">ila elite</a
+			><a href="#" class="slide-menu-link">các giải thưởng</a
+			><a href="#" class="slide-menu-link">tin tức ila</a
+			><a href="#" class="slide-menu-link">sự kiện ila</a
+			><a href="#" class="slide-menu-link">chuyện hay của ila</a
+			><a href="#" class="slide-menu-link">giới thiệu ila</a
+			><a href="#" class="slide-menu-link">tại sao nên chọn ila</a
+			><a href="#" class="slide-menu-link">liên hệ</a>
+			<a href="#" class="btn btn-sm btn--signup">Đăng ký</a>
+			<i
+				id="closeSlideMenu"
+				class="fas fa-times close-icon position-absolute"
+			></i>
+		</div>
+
+		<!-- main -->
+		<main>
+			<div class="centers">
+				<div class="container">
+					<h2 class="program-section-title text-center">
+						Tìm trung tâm gần nhất
+					</h2>
+					<select class="form-control" name="center" id="center">
+						<option value="1">Chọn thành phố</option>
+						<option value="2">Hồ Chí Minh</option>
+						<option value="3">Hà Nội</option>
+						<option value="4">Đà Nẵng</option>
+						<option value="5">Hải Phòng</option>
+						<option value="6">Bình Dương</option>
+						<option value="7">Đồng Nai</option>
+					</select>
+					<div class="map row">
+						<ul class="col col-12 col-lg-4 address">
+							<li class="address-item active">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+							<li class="address-item">
+								<div class="position-absolute map-icon">
+									<i class="fas fa-map-marker"></i>
+								</div>
+								<h4>ILA Aeon Long Biên</h4>
+								<p>
+									Tầng 2, TTTM AEON MALL, số 27, đường Cổ Linh, Quận Long Biên,
+									TP. Hà Nội
+								</p>
+								<div>
+									<i class="fas fa-phone icon"></i><a href="#">0967852341</a>
+								</div>
+								<div>
+									<i class="fas fa-envelope icon"></i
+									><a href="#">info@ilavietnam.edu.vn</a>
+								</div>
+								<button class="btn">Đăng ký ngay</button>
+							</li>
+						</ul>
+						<div class="col col-12 col-lg-8">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.46045275603!2d106.4150326722176!3d10.754666397815264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1614427553241!5m2!1svi!2s"
+								width="600"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- jQuery Script -->
+		<script src="./vendors/js/jquery.min.js"></script>
+		<!-- Way point -->
+		<script src="./vendors/js/jquery.waypoints.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="./vendors/js/bootstrap.bundle.min.js"></script>
+		<!-- Script -->
+		<script src="./resources/js/script.js"></script>
+	</body>
+</html>
