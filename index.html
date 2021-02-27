@@ -366,8 +366,12 @@
 		<!-- main -->
 		<main>
 			<!-- search section -->
-			<section class="search-section position-relative">
+			<section
+				id="searchSection"
+				class="search-section position-relative scroll-animate"
+			>
 				<!-- filter -->
+
 				<div class="search-section-filter position-absolute container">
 					<p class="text-center">
 						Xây dựng lộ trình học dành riêng cho con bạn
@@ -419,7 +423,7 @@
 					</a>
 				</div>
 				<!-- image -->
-				<div class="search-section-img">
+				<div id="searchSectionImg" class="search-section-img">
 					<a href="#">
 						<img src="./images/banner-search-section.jpg" alt="Banner"
 					/></a>
@@ -437,7 +441,7 @@
 					thành thế hệ Việt Nam ưu việt
 				</p>
 				<div class="program">
-					<div class="row">
+					<div id="programRow1" class="row">
 						<div class="program-item col-12 col-md-6 col-lg-4">
 							<div class="position-relative">
 								<img src="./images/program-1.jpg" alt="Program Photo" />
@@ -520,7 +524,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div id="programRow2" class="row">
 						<div class="program-item col-12 col-lg-8">
 							<div class="position-relative">
 								<img src="./images/program-4.jpg" alt="Program Photo" />
@@ -586,6 +590,7 @@
 				<h2 class="program-section-title text-center">ILA Study Pathway</h2>
 				<div class="w-100 d-flex justify-content-center">
 					<img
+						id="programImg"
 						class="w-100"
 						style="max-width: 750px"
 						src="./images/study-img.png"
@@ -595,7 +600,7 @@
 			</section>
 
 			<!-- good story section -->
-			<section class="good-story-section container-fluid">
+			<section id="storySection" class="good-story-section container-fluid">
 				<div class="good-story-section-content container text-center">
 					<h2 class="program-section-title text-center">Chuyện hay của ILA</h2>
 					<div class="row video-embed">
@@ -630,12 +635,15 @@
 			</section>
 
 			<!-- why choose section -->
-			<section class="whychoose-section position-relative">
+			<section
+				id="whyChooseSection"
+				class="whychoose-section position-relative"
+			>
 				<div class="position-relative container" style="z-index: 1">
-					<h2 class="title text-center">
+					<h2 id="whyChooseTitle" class="title text-center">
 						Tại sao nên học tiếng Anh và 6 kỹ năng thế kỷ 21 cùng ILA
 					</h2>
-					<p class="sub-title text-center">
+					<p id="whyChooseSubTil" class="sub-title text-center">
 						ILA Vietnam là một công ty hoạt động trong lĩnh vực giáo dục và đào
 						tạo tiếng Anh có vốn sở hữu nước ngoài, chuyên cung cấp các chương
 						trình học và dịch vụ bao gồm:<br />Chương trình giảng dạy Anh ngữ
@@ -644,7 +652,10 @@
 						Chương trình đào tạo giáo viên<br />Đào tạo doanh nghiệp<br />
 						Trung Tâm Du Học ILA.
 					</p>
-					<ul class="info d-flex flex-wrap justify-content-center">
+					<ul
+						id="whyChooseStas"
+						class="info d-flex flex-wrap justify-content-center"
+					>
 						<li class="info-item" id="infoItem1">
 							<h4 class="count">700</h4>
 							<p>GIÁO VIÊN NƯỚC NGOÀI</p>
@@ -673,7 +684,7 @@
 			<section class="news-section container-fluid">
 				<div class="container">
 					<h2 class="program-section-title text-center">Tin Tức</h2>
-					<div class="row">
+					<div id="newSection" class="row">
 						<div class="col-12 col-md-6 col-lg-4">
 							<div class="card">
 								<img

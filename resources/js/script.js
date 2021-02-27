@@ -159,4 +159,36 @@ $(document).ready(function () {
 		if (age == '0') $('#age').addClass('error');
 		if (level == '0') $('#level').addClass('error');
 	});
+
+	// event scroll and add animate
+	const programRow1 = $('#programRow1').offset().top;
+	const programRow2 = $('#programRow2').offset().top;
+	const programImg = $('#programImg').offset().top;
+	const storySection = $('#storySection').offset().top;
+	const whyChooseSection = $('#whyChooseSection').offset().top;
+	const newSection = $('#newSection').offset().top;
+
+	$(window).scroll(function () {
+		const height = $(window).scrollTop();
+		if (height >= programRow1 - 700) {
+			$('#programRow1').addClass('scroll-animate');
+		}
+		if (height >= programRow2 - 700) {
+			$('#programRow2').addClass('scroll-animate');
+		}
+		if (height >= programImg - 700) {
+			$('#programImg').addClass('scroll-animate');
+		}
+		if (height >= storySection - 700) {
+			$('#storySection').addClass('scroll-animate');
+		}
+		if (height >= whyChooseSection - 700) {
+			$('#whyChooseTitle').addClass('scroll-animate');
+			$('#whyChooseSubTil').addClass('scroll-animate');
+			$('#whyChooseStas').addClass('scroll-animate');
+		}
+		if (height >= newSection - 700) {
+			$('#newSection').addClass('scroll-animate');
+		}
+	});
 });

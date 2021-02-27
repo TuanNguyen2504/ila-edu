@@ -20,3 +20,30 @@
 		opacity: 1;
 	}
 }
+
+.scroll-animate {
+	-webkit-animation: scroll 0.8s ease-in forwards;
+	animation: scroll 0.8s ease-in forwards;
+}
+
+@-webkit-keyframes scroll {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes scroll {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
