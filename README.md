@@ -2,4 +2,4 @@
 
 **Project freelance: Practice Html, css, Jquery**
 <br/>
-* Link demo: https://ila-edu.web.app/
+* Link demo: https://tuannguyen2504.github.io/ila-edu
